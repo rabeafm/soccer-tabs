@@ -1,6 +1,9 @@
 import {Fragment, useEffect, useState} from "react";
 
-const Tab = (league:any) => {
+interface lega{
+  league: string;
+}
+const Tab = (league:lega) => {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
